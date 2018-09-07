@@ -29,3 +29,5 @@ Distance.inWords time1 time2 == "less than 5 seconds"
 ```
 
 More examples in the /test folder.
+
+Heavily inspired by <https://github.com/alpacaaa/elm-date-distance>
