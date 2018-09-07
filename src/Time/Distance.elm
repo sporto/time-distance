@@ -2,6 +2,9 @@ module Time.Distance exposing (inWords)
 
 import Time exposing (Posix)
 
+{-|
+@docs inWords
+-}
 
 second =
     1000
@@ -30,7 +33,14 @@ year =
 toS =
     String.fromInt
 
+{-| Returns the distance between two times in words.
 
+    time1 = Posix.fromMillis 1530403200000
+    time2 = Posix.fromMillis 1530403205000
+    inWords time1 time2 == "less than 5 seconds"
+
+Month calculations are approximates, using 30 days.
+-}
 inWords : Posix -> Posix -> String
 inWords posix1 posix2 =
     let
