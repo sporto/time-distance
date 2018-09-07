@@ -1,5 +1,7 @@
 # Time distance
 
+[ ![Codeship Status for sporto/time-distance](https://app.codeship.com/projects/12cafa70-94a9-0136-c270-42599d9126df/status?branch=master)](https://app.codeship.com/projects/304697)
+
 Return the distance between two times in words.
 
 e.g.
