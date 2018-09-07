@@ -1,11 +1,11 @@
 module Time.Distance exposing (inWords)
 
-import Time exposing (Posix)
-
 {-|
 # Time.Distance
 @docs inWords
 -}
+import Time exposing (Posix)
+
 
 second =
     1000
