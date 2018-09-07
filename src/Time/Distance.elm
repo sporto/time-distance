@@ -1,9 +1,14 @@
 module Time.Distance exposing (inWords)
 
 {-|
+
+
 # Time.Distance
+
 @docs inWords
+
 -}
+
 import Time exposing (Posix)
 
 
@@ -34,6 +39,7 @@ year =
 toS =
     String.fromInt
 
+
 {-| Returns the distance between two times in words.
 
     time1 = Posix.fromMillis 1530403200000
@@ -41,6 +47,7 @@ toS =
     inWords time1 time2 == "less than 5 seconds"
 
 Month calculations are approximates, using 30 days.
+
 -}
 inWords : Posix -> Posix -> String
 inWords posix1 posix2 =
@@ -120,7 +127,7 @@ inWords posix1 posix2 =
     else
         let
             sinceStartOfYear =
-                remainderBy year absDiff 
+                remainderBy year absDiff
 
             monthsSinceStartOfYear =
                 sinceStartOfYear // month
