@@ -1,0 +1,16 @@
+{
+  "name": "time-distance",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:sporto/time-distance.git",
+  "author": "Sebastian Porto <s@porto5.com>",
+  "license": "MIT",
+  "scripts": {
+    "test": "elm-test"
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+    "elm-test": "^0.19.0-beta8"
+  }
+}
