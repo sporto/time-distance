@@ -3,6 +3,7 @@ module Time.Distance exposing (inWords)
 import Time exposing (Posix)
 
 {-|
+# Time.Distance
 @docs inWords
 -}
 
