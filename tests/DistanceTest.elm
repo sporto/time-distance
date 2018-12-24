@@ -242,4 +242,9 @@ suite =
             (posix now)
             (now |> plusYears 3 |> plusMonths 4 |> posix)
             "over 3 years"
+        , inWordsTest
+            "0 seconds"
+            (posix now)
+            (posix now)
+            "0 seconds"
         ]
