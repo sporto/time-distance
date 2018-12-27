@@ -85,7 +85,10 @@ inWords posix1 posix2 =
         diffInYearFloat =
             toFloat absDiff / year
     in
-    if diffInSeconds < 25 then
+    if diffInSeconds == 0 then
+        "0 seconds"
+
+    else if diffInSeconds < 25 then
         "less than " ++ toS diffInSeconds ++ " seconds"
 
     else if diffInSeconds < 35 then
