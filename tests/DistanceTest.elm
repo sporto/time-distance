@@ -173,6 +173,16 @@ suite =
             (now |> plusHours 36 |> posix)
             "1 day"
         , inWordsTest
+            "1.75 days"
+            (posix now)
+            (now |> plusHours 40 |> posix)
+            "1 day"
+        , inWordsTest
+            "> 1.75 days"
+            (posix now)
+            (now |> plusHours 41 |> posix)
+            "2 days"
+        , inWordsTest
             "2 days"
             (posix now)
             (now |> plusHours 48 |> posix)

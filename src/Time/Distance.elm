@@ -112,8 +112,11 @@ inWords posix1 posix2 =
     else if diffInHours < 24 then
         "about " ++ toS diffInHours ++ " hours"
 
-    else if diffInHours < 40 then
+    else if diffInHours <= 40 then
         "1 day"
+
+    else if diffInHours < 48 then
+        "2 days"
 
     else if diffInDays < 30 then
         toS diffInDays ++ " days"
